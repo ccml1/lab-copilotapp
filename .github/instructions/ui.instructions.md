@@ -20,6 +20,12 @@ Refer to technology-specific instruction files:
 
 ## Core Principles
 
+### Comments and documentation
+
+- Comment the intent, constraint, or decision behind a piece of UI, not the markup or class names that already describe it.
+- Avoid comments that merely paraphrase the code. Keep comments short and update or remove them when the related implementation changes.
+- Reusable components must document their public props contract; technology-specific requirements are in `astro.instructions.md`.
+
 ### Testability
 
 - Every interactive element MUST include a `data-testid` attribute
